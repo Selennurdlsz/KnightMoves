@@ -1,0 +1,29 @@
+﻿<Window x:Class="YazilimYapimiOdev2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YazilimYapimiOdev2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="500*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border Background="SkyBlue" Grid.Column="0">
+            <StackPanel>
+                <Label Content="Boyutu seciniz" FontSize="24"/>
+                <RadioButton x:Name="rdBtn5x5" Click="rdBtn5x5_Click" >5x5</RadioButton>
+                <RadioButton x:Name="rdBtn6x6" Click="rdBtn6x6_Click" >6x6</RadioButton>
+                <RadioButton x:Name="rdBtn7x7" Click="rdBtn7x7_Click" >7x7</RadioButton>
+                <RadioButton x:Name="rdBtn8x8" Click="rdBtn8x8_Click" >8x8</RadioButton>
+                <RadioButton x:Name="rdBtn9x9" Click="rdBtn9x9_Click" >9x9</RadioButton>
+            </StackPanel>
+        </Border>
+        <Border Background="Snow" Grid.Column="1">
+            <Grid x:Name="OyunAlani" ></Grid>
+        </Border>
+
+    </Grid>
+</Window>
